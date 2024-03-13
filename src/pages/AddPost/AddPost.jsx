@@ -21,7 +21,7 @@ function AddPost() {
 
   const fetchPosts = async () => {
     try {
-      const res = await axios.get(`${BASE_URL}/api/posts/timeline/${user._id}`);
+      const res = await axios.get(`/posts/timeline/${user._id}`);
       console.log("API Response:", res.data); // Check the API response
 
       if (Array.isArray(res.data)) {

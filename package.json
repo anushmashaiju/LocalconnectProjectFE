@@ -44,5 +44,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "BASE_URL/api"
+"proxy":"http://localhost:8800/api"
 }

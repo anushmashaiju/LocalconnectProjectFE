@@ -22,7 +22,7 @@ function Home() {
   const fetchPosts = async () => {
     try {
       //const res = await axios.get(`http://localhost:8800/api/posts`);
-      const res = await axios.get(`${BASE_URL}/api/posts/location/${selectedLocation}`);
+      const res = await axios.get(`/posts/location/${selectedLocation}`);
       setPosts(
         res.data.sort((p1, p2) => {
           return new Date(p2.createdAt) - new Date(p1.createdAt);
